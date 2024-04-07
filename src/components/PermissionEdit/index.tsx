@@ -74,9 +74,9 @@ export const messages = defineMessages({
   viewrecent: 'View Recently Added',
   viewrecentDescription:
     'Grant permission to view the list of recently added media.',
-  viewwatchlists: 'View {mediaServerName} Watchlists',
+  viewwatchlists: 'View GBstreams Watchlists',
   viewwatchlistsDescription:
-    "Grant permission to view other users' {mediaServerName} Watchlists.",
+    "Grant permission to view other users' GBstreams Watchlists.",
 });
 
 interface PermissionEditProps {

@@ -14,7 +14,7 @@ import { defineMessages, useIntl } from 'react-intl';
 const messages = defineMessages({
   status: '{status}',
   status4k: '4K {status}',
-  playonplex: 'Play on {mediaServerName}',
+  playonplex: 'Play on GBstreams',
   openinarr: 'Open in {arr}',
   managemedia: 'Manage {mediaType}',
   seasonepisodenumber: 'S{seasonNumber}E{episodeNumber}',

@@ -12,7 +12,7 @@ const messages = defineMessages({
   menuGeneralSettings: 'General',
   menuUsers: 'Users',
   menuPlexSettings: 'Plex',
-  menuJellyfinSettings: '{mediaServerName}',
+  menuJellyfinSettings: 'GBstreams',
   menuServices: 'Services',
   menuNotifications: 'Notifications',
   menuLogs: 'Logs',
