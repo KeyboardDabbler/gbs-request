@@ -169,6 +169,10 @@ export const availableLanguages: AvailableLanguageObject = {
     code: 'ko',
     display: '한국어',
   },
+  ko: {
+    code: 'ko',
+    display: '한국어',
+  },
   'zh-TW': {
     code: 'zh-TW',
     display: '繁體中文',
