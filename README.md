@@ -40,9 +40,34 @@ Check out our documentation for instructions on how to install and run Jellyseer
 
 https://docs.jellyseerr.dev/getting-started/
 
+- Then run the command `which node` to find your node path (assuming it's at `/usr/bin/node`)
+- Then create the service file using `sudo systemctl edit jellyseerr.service` or creating and editing a file at `/etc/systemd/system/jellyseerr.service`
+
+Service file contents:
+
+```
+[Unit]
+Description=Jellyseerr Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+EnvironmentFile=/etc/jellyseerr/jellyseerr.conf
+Environment=NODE_ENV=production
+Type=exec
+Restart=on-failure
+WorkingDirectory=/opt/jellyseerr
+ExecStart=/usr/bin/node dist/index.js
+
+[Install]
+WantedBy=multi-user.target
+```
+
 ### Packages:
 
 Archlinux: [AUR](https://aur.archlinux.org/packages/jellyseerr)
+Nixpkg: [Nixpkg](https://search.nixos.org/packages?channel=unstable&show=jellyseerr)
+Snap: [Snap](https://snapcraft.io/jellyseerr)
 
 Nix: [Nixpkg](https://search.nixos.org/packages?channel=unstable&show=jellyseerr)
 

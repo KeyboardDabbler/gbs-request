@@ -256,7 +256,6 @@ class JellyfinAPI extends ExternalAPI {
           `Something went wrong while getting libraries from the Jellyfin server: ${e.message}`,
           { label: 'Jellyfin API' }
         );
-
         return [];
       }
     }
